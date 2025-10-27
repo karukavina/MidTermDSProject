@@ -2,7 +2,7 @@ PROCESS:
 This project is based upon the adventureworks schema + tables. The goal of this project was to build an ETL pipeline that moved data from JSON files to MongoDB to MySQL. To prove functionality I ran SQL queries at the end of this pipeline.
 
 1.Extract:
-For this step, I loaded my JSON files into mongoDB collections. Then I was able to retrieve them these collections using pandas dataframes.
+For this step, I loaded my JSON files into mongoDB collections. Then I was able to retrieve these collections using pandas dataframes.
 
 2.Transform:
 For this step, I cleaned and standardized my data by renaming columns, adding surrogate keys, dropping null columns, and fixing date-time format in columns. I also used dim_date to assign date keys for order dates, due dates, and ship dates in the fact tables. Finally, I merged the dataframes to include foreign keys between the fact and dimension tables.
